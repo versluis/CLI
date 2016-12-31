@@ -8,4 +8,4 @@ and write to the command line respectively (without timestamps, like NSLog would
 I'm using NSFileHandle for both classes.
 
 This article explains what's happening in more detail:
-http://pinkstone.co.uk/how-to-read-command-line-input-on-macos-in-objective-c/
+* http://pinkstone.co.uk/how-to-read-command-line-input-on-macos-in-objective-c/
