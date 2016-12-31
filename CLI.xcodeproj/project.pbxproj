@@ -10,6 +10,11 @@
 		D284A4841E16AA8A00907DC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A4831E16AA8A00907DC9 /* main.m */; };
 		D284A48C1E17F85F00907DC9 /* Input.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A48B1E17F85F00907DC9 /* Input.m */; };
 		D284A48F1E182DA000907DC9 /* Output.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A48E1E182DA000907DC9 /* Output.m */; };
+		D284A4921E1847CC00907DC9 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A4911E1847CC00907DC9 /* Parser.m */; };
+		D284A4951E1847D800907DC9 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A4941E1847D800907DC9 /* Data.m */; };
+		D284A4981E1847E700907DC9 /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A4971E1847E700907DC9 /* Runtime.m */; };
+		D284A49B1E1848E800907DC9 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A49A1E1848E800907DC9 /* Room.m */; };
+		D284A49E1E1848EF00907DC9 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = D284A49D1E1848EF00907DC9 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +36,16 @@
 		D284A48B1E17F85F00907DC9 /* Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input.m; sourceTree = "<group>"; };
 		D284A48D1E182DA000907DC9 /* Output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Output.h; sourceTree = "<group>"; };
 		D284A48E1E182DA000907DC9 /* Output.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Output.m; sourceTree = "<group>"; };
+		D284A4901E1847CC00907DC9 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		D284A4911E1847CC00907DC9 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		D284A4931E1847D800907DC9 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		D284A4941E1847D800907DC9 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		D284A4961E1847E700907DC9 /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		D284A4971E1847E700907DC9 /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
+		D284A4991E1848E800907DC9 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		D284A49A1E1848E800907DC9 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		D284A49C1E1848EF00907DC9 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		D284A49D1E1848EF00907DC9 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +79,16 @@
 			isa = PBXGroup;
 			children = (
 				D284A4831E16AA8A00907DC9 /* main.m */,
+				D284A4901E1847CC00907DC9 /* Parser.h */,
+				D284A4911E1847CC00907DC9 /* Parser.m */,
+				D284A4931E1847D800907DC9 /* Data.h */,
+				D284A4941E1847D800907DC9 /* Data.m */,
+				D284A4991E1848E800907DC9 /* Room.h */,
+				D284A49A1E1848E800907DC9 /* Room.m */,
+				D284A49C1E1848EF00907DC9 /* Item.h */,
+				D284A49D1E1848EF00907DC9 /* Item.m */,
+				D284A4961E1847E700907DC9 /* Runtime.h */,
+				D284A4971E1847E700907DC9 /* Runtime.m */,
 				D284A48A1E17F85F00907DC9 /* Input.h */,
 				D284A48B1E17F85F00907DC9 /* Input.m */,
 				D284A48D1E182DA000907DC9 /* Output.h */,
@@ -129,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D284A49E1E1848EF00907DC9 /* Item.m in Sources */,
+				D284A4951E1847D800907DC9 /* Data.m in Sources */,
+				D284A4921E1847CC00907DC9 /* Parser.m in Sources */,
 				D284A48F1E182DA000907DC9 /* Output.m in Sources */,
 				D284A48C1E17F85F00907DC9 /* Input.m in Sources */,
+				D284A4981E1847E700907DC9 /* Runtime.m in Sources */,
+				D284A49B1E1848E800907DC9 /* Room.m in Sources */,
 				D284A4841E16AA8A00907DC9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
