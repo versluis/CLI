@@ -7,11 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Input.h"
+#import "Output.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        // NSLog(@"Hello, World!");
+        
+        // prompt user for some input
+        [Output printMessage:@"\n\nType something:\n>"];
+        
+        // get the user's input
+        NSString *userInput = [Input getUserInput];
+        
+        // print the user's input
+        NSString *message = [NSString stringWithFormat:@"\nYou typed: %@\n\n", userInput];
+        [Output printMessage:message];
+        
     }
     return 0;
 }
