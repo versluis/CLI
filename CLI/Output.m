@@ -12,6 +12,8 @@
 
 + (void)printMessage:(NSString *)message {
     
+    message = [NSString stringWithFormat:@"%@", message];
+    
     // print this to the console
     NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
     NSFileHandle *handle = [NSFileHandle fileHandleWithStandardOutput];
