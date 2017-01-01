@@ -28,7 +28,8 @@ int main(int argc, const char * argv[]) {
         [Output printMessage:message];
         */
         
-        [Runtime runGame];
+        Runtime *runtime = [[Runtime alloc]init];
+        [runtime runGame];
         
     }
     return 0;
