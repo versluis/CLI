@@ -10,4 +10,6 @@
 
 @interface Parser : NSObject
 
++ (NSArray *)parseSentence:(NSString *)sentence;
+
 @end

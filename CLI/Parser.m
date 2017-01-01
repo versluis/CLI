@@ -10,4 +10,14 @@
 
 @implementation Parser
 
++ (NSArray *)parseSentence:(NSString *)sentence {
+    
+    // split sentence up into single words
+    
+    // for now, we'll use a single word as input
+    NSArray *words = @[sentence];
+    
+    return words;
+}
+
 @end
