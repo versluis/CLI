@@ -7,9 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Input.h"
+#import "Output.h"
+#import "Data.h"
+#import "Room.h"
 
 @interface Runtime : NSObject
 
-+ (void)runGame;
+- (void)runGame;
+- (void)printRoomTitle;
+
+@property (nonatomic, strong) Data *data;
 
 @end
