@@ -17,4 +17,6 @@
 @property (nonatomic, strong) NSArray *rooms;
 @property (nonatomic, strong) NSArray *items;
 
+@property int currentRoom;
+
 @end

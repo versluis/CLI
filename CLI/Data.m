@@ -15,6 +15,7 @@
     if (!_rooms) {
         
         _rooms = [self generateRooms].copy;
+        self.currentRoom = 1;
     }
     return _rooms;
 }
@@ -22,6 +23,11 @@
 - (NSMutableArray*)generateRooms {
     
     NSMutableArray *rooms = [[NSMutableArray alloc]init];
+    
+    // room 0
+    Room *room0 = [[Room alloc]init];
+    room0.title = @"This room does not exist.";
+    [rooms addObject:room0];
     
     // room 1
     Room *room1 = [[Room alloc]init];
@@ -33,8 +39,8 @@
     // room 2
     Room *room2 = [[Room alloc]init];
     room2.north = 1;
-    room2.east = 3;
-    room2.west = 4;
+    room2.east = 4;
+    room2.west = 3;
     room2.title = @"Corridor";
     room2.roomDescription = @"You are in a long winded corridor.\nYou can see doors to the east and west.";
     [rooms addObject:room2];
