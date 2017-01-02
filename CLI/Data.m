@@ -62,4 +62,28 @@
     return rooms;
 }
 
+- (NSArray *)verbs {
+    
+    if (!_verbs) {
+        _verbs = [self generateVerbs];
+    }
+    return _verbs;
+}
+
+- (NSMutableArray *)generateVerbs {
+    
+    NSMutableArray *verbs = [[NSMutableArray alloc]init];
+    
+    // moving
+    NSArray *moving = @[@"north", @"south", @"east", @"west", @"n", @"s", @"e", @"w"];
+    [verbs addObject:moving];
+    
+    // help
+    NSArray *help = @[@"help"];
+    [verbs addObject:help];
+    
+    return verbs;
+}
+
+
 @end

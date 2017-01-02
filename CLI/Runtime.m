@@ -31,6 +31,7 @@
     // the main routine that lets us use the game
     // endless loop starts here
     
+    self.handledInput = 0;
     for (int i = 1; i<10; i++) {
         
         
@@ -43,10 +44,27 @@
         // parse user input
         NSArray *userCommand = [Parser parseSentence:userInput];
         
-        // move
-        [self go:userCommand.firstObject];
+        // figure out how to react
+        for (NSArray *verbGroup in self.data.verbs) {
+            
+            // moving
+            if ([verbGroup containsObject:@"north"]) {
+                [self go:userCommand.firstObject];
+            }
+            
+            // help
+            if ([verbGroup containsObject:@"help"]) {
+                [self help];
+            }
+        }
+        
+        if (!self.handledInput) {
+            // if the verb doesn't exist, tell the user
+            [Output printMessage:@"I don't know that word."];
+            
+        }
+        
     }
-    
 }
 
 - (void)setup {
@@ -113,6 +131,14 @@
             [Output printMessage:@"I'm afraid you can't go that way."];
         }
     }
+    
+    self.handledInput = 1;
 }
 
+- (void)help {
+    
+    NSString *message = @"I understand the following verbs:\nnorth, south, east, west, n, s, e, w and help.";
+    [Output printMessage:message];
+    self.handledInput = 1;
+}
 @end

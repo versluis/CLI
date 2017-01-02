@@ -18,5 +18,6 @@
 - (void)printRoomTitle;
 
 @property (nonatomic, strong) Data *data;
+@property BOOL handledInput;
 
 @end
